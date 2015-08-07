@@ -1,3 +1,3 @@
 ##Angular
 
-Simple Angular with Grunt.js
+Simple Angular app with Grunt.js
