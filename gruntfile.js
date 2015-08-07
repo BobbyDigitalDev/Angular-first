@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');//loads the npm modules
-  grunt.loadNmpTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.initConfig({//fires up our modules with their options
     uglify: {//invokes the uglify module
