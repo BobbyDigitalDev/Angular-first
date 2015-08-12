@@ -1,7 +1,7 @@
 var myApp = angular.module('myApp', [
   'ngRoute',
   'artistControllers'
-  ]);
+]);
 
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
@@ -10,7 +10,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
     controller: 'ListController'
   }).
   when('/details/:itemId', {
-    templateUrl: 'partials/details.html', 
+    templateUrl: 'partials/details.html',
     controller: 'DetailsController'
   }).
   otherwise({

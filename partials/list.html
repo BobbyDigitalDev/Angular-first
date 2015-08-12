@@ -1,5 +1,5 @@
 <section class="artistpage">
-  <div class="search">
+  <div class="search" >
     <h1>Artist Directory</h1>
       <label>search:</label>
         <input ng-model ="query" placeholder="Search for artists" autofocus> 
@@ -22,7 +22,7 @@
  
   </div>
 
-  <ul class="artistlist">
+  <ul class="artistlist" ng-show="query">
     <li ng-animate="'animate'"class="artist cf" ng-repeat="item in artists | filter: query | orderBy: artistOrder:direction"><!--ng-repeat directive allows us to loop through the data in the scoped artists variable and pushes it into the item variable -->
       <a href="#/details/{{artists.indexOf(item)}}">
         <img ng-src="images/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">
